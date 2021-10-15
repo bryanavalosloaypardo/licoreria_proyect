@@ -1,0 +1,158 @@
+/* GLOBAL SETTINGS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+
+/* SECCION ARRIBA DEL HEADER */
+
+.header-top-section {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.header-menu-button-container {
+  width: 70px;
+  height: 80px;
+  display: grid;
+  align-items: center;
+}
+.header-menu-button {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+}
+.header-menu-button:hover {
+  transform: scale(1.2);
+}
+.header-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-logo-img-container {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.header-logo-title {
+  font-size: 4rem;
+}
+
+/* SECCION ABAJO DEL HEADER */
+
+.header-bottom-section {
+  height: 80px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.header-bottom-section nav {
+  width: 100%;
+  height: 100%;
+}
+.header-bottom-section nav ul {
+  padding: 0 10px 0 10px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  list-style: none;
+  column-gap: 20px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.header-bottom-section nav a {
+  color: black;
+  scroll-snap-align: center;
+  border-radius: 15px;
+  width: 102px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-size: 2.2rem;
+}
+
+/* SECCION 1 DEL MAIN */
+
+.main-hero-section {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.main-hero-section-left {
+  height: 160px;
+  border: 1px solid black;
+  width: 40%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-hero-section-left h2 {
+  width: 90%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+}
+.main-hero-section-right {
+  height: 160px;
+  border: 1px solid black;
+  width: 50%;
+  margin-right: 10px;
+}
+.main-hero-section-right-scroll-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  place-items: center;
+  padding: 0 20px 0 20px;
+}
+.main-hero-section-right-scroll-container figure {
+  width: 140px;
+  height: 120px;
+  border: 1px solid black;
+  scroll-snap-align: center;
+}
+
+/* SECCION 2 DEL MAIN */
+
+.main-2-section {
+  display: grid;
+  place-items: center;
+  height: 200px;
+  border-bottom: 1px solid black;
+}
+.main-2-section-card {
+  display: grid;
+  place-items: center;
+  width: 80%;
+  height: 160px;
+  border: 1px solid black;
+}
+.main-2-section-card h2 {
+  width: 80%;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 3.5rem;
+}
